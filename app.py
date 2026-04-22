@@ -8,8 +8,9 @@ import seaborn as sns
 model = pickle.load(open('titanic_model.pkl', 'rb'))
 df = pd.read_csv('cleaned_titanic.csv')
 
-st.set_page_config(page_title="Titanic Intelligence", layout="wide")
-st.title("🚢 Titanic: Research Dashboard & Predictor")
+st.set_page_config(page_title="Titanic Survival Dashboard", layout="wide")
+
+st.title("🚢 Titanic Survival Dashboard")
 
 tab1, tab2 = st.tabs(["🔮 Survival Predictor", "📊 Advanced Analytics"])
 
